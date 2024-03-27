@@ -49,6 +49,7 @@ public class MapFileConvertor : MonoBehaviour
                 data += "," + portalLinkNames[i];
             }
         }
+        data += "\nmonster=" + spawnMonsterName;
         data += "\n[data]\nmap=" + GetMapData();
 
         File.WriteAllText(tileSetting.outputPath + mapName + ".ini", data);
