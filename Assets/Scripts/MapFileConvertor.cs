@@ -23,7 +23,7 @@ public class MapFileConvertor : MonoBehaviour
         tilemap = GetComponent<Tilemap>();
         tileSetting = Resources.Load<TileSetting>("TileSetting");
         mapBorderColor = Color.red;
-        cutBorder = false;
+        cutBorder = true;
     }
 
     private void OnDrawGizmosSelected()
@@ -53,6 +53,8 @@ public class MapFileConvertor : MonoBehaviour
 
         File.WriteAllText(tileSetting.outputPath + mapName + ".ini", data);
         AssetDatabase.Refresh();
+
+        gameObject.name = mapName;
     }
 
     [ContextMenu("µð¹ö±×")]
