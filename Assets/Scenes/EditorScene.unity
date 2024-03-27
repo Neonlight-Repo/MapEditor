@@ -182,8 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb7922a78b150bc4bb887c534292a390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ignore:
-  - {fileID: 1548271065}
+  ignore: []
 --- !u!1 &209845568
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +233,6 @@ MonoBehaviour:
   tileSetting: {fileID: 11400000, guid: 4016a3355889e4c43b2b2bbaf18b2741, type: 2}
   mapBorderColor: {r: 1, g: 0, b: 0, a: 1}
   cutBorder: 1
-  mapName: Map2
   mapSize: {x: 26, y: 11}
   spawnMonsterName: 
   portalLinkNames: []
@@ -760,7 +758,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 8.9, y: 4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1262,7 +1260,6 @@ MonoBehaviour:
   tileSetting: {fileID: 11400000, guid: 4016a3355889e4c43b2b2bbaf18b2741, type: 2}
   mapBorderColor: {r: 1, g: 0, b: 0, a: 1}
   cutBorder: 1
-  mapName: Map1
   mapSize: {x: 26, y: 11}
   spawnMonsterName: 
   portalLinkNames: []

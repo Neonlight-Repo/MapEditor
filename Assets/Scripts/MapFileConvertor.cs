@@ -11,15 +11,12 @@ public class MapFileConvertor : MonoBehaviour
     public Color mapBorderColor;
     public bool cutBorder;
     [Header("맵 정보")]
-    public string mapName;
     public Vector2Int mapSize;
     public string spawnMonsterName;
-    public string[] portalLinkNames;
-
+    public MapFileConvertor[] portalLinks;
 
     private void Reset()
     {
-        mapName = gameObject.name;
         tilemap = GetComponent<Tilemap>();
         tileSetting = Resources.Load<TileSetting>("TileSetting");
         mapBorderColor = Color.red;
@@ -40,28 +37,20 @@ public class MapFileConvertor : MonoBehaviour
     [ContextMenu("파일 생성")]
     public void GenerateFile()
     {
-        string data = "[map]\nname=" + mapName + "\nsize=" + mapSize.x + "," + mapSize.y + "\nportal=";
-        if (portalLinkNames.Length > 0)
+        string data = "[map]\nname=" + gameObject.name + "\nsize=" + mapSize.x + "," + mapSize.y + "\nportal=";
+        if (portalLinks.Length > 0)
         {
-            data += portalLinkNames[0];
-            for (int i = 1; i < portalLinkNames.Length; i++)
+            data += portalLinks[0];
+            for (int i = 1; i < portalLinks.Length; i++)
             {
-                data += "," + portalLinkNames[i];
+                data += "," + portalLinks[i].gameObject.name;
             }
         }
         data += "\nmonster=" + spawnMonsterName;
         data += "\n[data]\nmap=" + GetMapData();
 
-        File.WriteAllText(tileSetting.outputPath + mapName + ".ini", data);
+        File.WriteAllText(tileSetting.outputPath + gameObject.name + ".ini", data);
         AssetDatabase.Refresh();
-
-        gameObject.name = mapName;
-    }
-
-    [ContextMenu("디버그")]
-    public void Test()
-    {
-
     }
 
     private string GetMapData()
