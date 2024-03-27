@@ -49,7 +49,7 @@ public class MapFileConvertor : MonoBehaviour
         data += "\nmonster=" + spawnMonsterName;
         data += "\n[data]\nmap=" + GetMapData();
 
-        File.WriteAllText(tileSetting.outputPath + gameObject.name + ".ini", data);
+        File.WriteAllText(TileManager.Instance.outputPath + gameObject.name + ".ini", data);
         AssetDatabase.Refresh();
     }
 
