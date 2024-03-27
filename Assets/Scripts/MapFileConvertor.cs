@@ -40,7 +40,7 @@ public class MapFileConvertor : MonoBehaviour
         string data = "[map]\nname=" + gameObject.name + "\nsize=" + mapSize.x + "," + mapSize.y + "\nportal=";
         if (portalLinks.Length > 0)
         {
-            data += portalLinks[0];
+            data += portalLinks[0].gameObject.name;
             for (int i = 1; i < portalLinks.Length; i++)
             {
                 data += "," + portalLinks[i].gameObject.name;
