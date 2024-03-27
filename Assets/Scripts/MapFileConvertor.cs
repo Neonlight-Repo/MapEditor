@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
@@ -42,7 +40,16 @@ public class MapFileConvertor : MonoBehaviour
     [ContextMenu("파일 생성")]
     public void GenerateFile()
     {
-        string data = string.Format("");
+        string data = "[map]\nname=" + mapName + "\nsize=" + mapSize.x + "," + mapSize.y + "\nportal=";
+        if (portalLinkNames.Length > 0)
+        {
+            data += portalLinkNames[0];
+            for (int i = 1; i < portalLinkNames.Length; i++)
+            {
+                data += "," + portalLinkNames[i];
+            }
+        }
+        data += "\n[data]\nmap=" + GetMapData();
 
         File.WriteAllText(tileSetting.outputPath + mapName + ".ini", data);
         AssetDatabase.Refresh();
@@ -52,6 +59,39 @@ public class MapFileConvertor : MonoBehaviour
     public void Test()
     {
 
+    }
+
+    private string GetMapData()
+    {
+        string data = "";
+        for (int y = mapSize.y - 1; y >= 0; y--)
+        {
+            for (int x = 0; x < mapSize.x; x++)
+            {
+                data += GetSpriteID(tilemap.GetSprite(new Vector3Int(x, y)));
+            }
+        }
+        return data;
+    }
+
+    private int GetSpriteID(Sprite sprite)
+    {
+        if (sprite == tileSetting.wallSprite)
+        {
+            return 1;
+        }
+        else if (sprite == tileSetting.spawnPointSprite)
+        {
+            return 2;
+        }
+        else if (sprite == tileSetting.portalSprite)
+        {
+            return 3;
+        }
+        else
+        {
+            return 0;
+        }
     }
 
     private void CutTileMap()
