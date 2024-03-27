@@ -263,6 +263,7 @@ GameObject:
   - component: {fileID: 1548271062}
   - component: {fileID: 1548271064}
   - component: {fileID: 1548271063}
+  - component: {fileID: 1548271065}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -344,15 +345,43 @@ Tilemap:
   m_Enabled: 1
   m_Tiles: {}
   m_AnimatedTiles: {}
-  m_TileAssetArray: []
-  m_TileSpriteArray: []
-  m_TileMatrixArray: []
-  m_TileColorArray: []
+  m_TileAssetArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  m_TileSpriteArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  m_TileMatrixArray:
+  - m_RefCount: 0
+    m_Data:
+      e00: -3.3561292e+29
+      e01: 0
+      e02: -7.5266875e+29
+      e03: -7.5266875e+29
+      e10: 5.59e-43
+      e11: 0
+      e12: 5.55e-43
+      e13: 5.55e-43
+      e20: -4.1563907e-17
+      e21: 1e-45
+      e22: 0.0000000014038877
+      e23: 1.5867635e+29
+      e30: 4.5904e-41
+      e31: 0
+      e32: 5.56e-43
+      e33: 5.59e-43
+  m_TileColorArray:
+  - m_RefCount: 0
+    m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: 0, y: 0, z: 0}
-  m_Size: {x: 0, y: 0, z: 1}
+  m_Origin: {x: -1, y: -1, z: 0}
+  m_Size: {x: 6, y: 2, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -372,3 +401,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1548271065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548271061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 506f2a562adef5f46a4720cd71f2c189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1548271064}
+  tileSetting: {fileID: 11400000, guid: 4016a3355889e4c43b2b2bbaf18b2741, type: 2}
+  mapBorderColor: {r: 1, g: 0, b: 0, a: 1}
+  mapName: Tilemap
+  mapSize: {x: 4, y: 4}
+  spawnMonsterName: 
+  portalLinkNames: []

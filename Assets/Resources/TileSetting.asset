@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ea95d9c706a6049bb2bb632307a3e5, type: 3}
+  m_Name: TileSetting
+  m_EditorClassIdentifier: 
+  outputPath: Assets/Resources/Output/
+  wallSprite: {fileID: 1367283711, guid: 29374b9bc2d17fc4980a6ac29cf77c16, type: 3}
+  spawnPointSprite: {fileID: -1600283446, guid: 29374b9bc2d17fc4980a6ac29cf77c16, type: 3}
+  portalSprite: {fileID: -1874658960, guid: 29374b9bc2d17fc4980a6ac29cf77c16, type: 3}
