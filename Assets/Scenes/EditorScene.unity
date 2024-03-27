@@ -235,7 +235,7 @@ MonoBehaviour:
   cutBorder: 1
   mapSize: {x: 26, y: 11}
   spawnMonsterName: 
-  portalLinkNames: []
+  portalLinks: []
 --- !u!483693784 &209845571
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -1262,4 +1262,4 @@ MonoBehaviour:
   cutBorder: 1
   mapSize: {x: 26, y: 11}
   spawnMonsterName: 
-  portalLinkNames: []
+  portalLinks: []

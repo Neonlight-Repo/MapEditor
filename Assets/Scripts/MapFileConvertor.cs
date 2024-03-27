@@ -53,6 +53,12 @@ public class MapFileConvertor : MonoBehaviour
         AssetDatabase.Refresh();
     }
 
+    [ContextMenu("이 맵만 활성화")]
+    public void SelectThisMap()
+    {
+        TileManager.Instance.SelectMap(this);
+    }
+
     private string GetMapData()
     {
         string data = "";
