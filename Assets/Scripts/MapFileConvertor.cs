@@ -36,7 +36,7 @@ public class MapFileConvertor : MonoBehaviour
 
     public void GenerateFile()
     {
-        string data = "[map]\nname=" + gameObject.name + "\nsize=" + mapSize.x + "," + mapSize.y + "\nportal=";
+        string data = "[info]\nname=" + gameObject.name + "\nsize=" + mapSize.x + "," + mapSize.y + "\nportal=";
         if (portalLinks.Length > 0)
         {
             data += portalLinks[0].gameObject.name;
@@ -46,7 +46,7 @@ public class MapFileConvertor : MonoBehaviour
             }
         }
         data += "\nmonster=" + spawnMonsterName;
-        data += "\n[data]\nmap=" + GetMapData();
+        data += "\n[map]\ndata=" + GetMapData();
 
         File.WriteAllText(TileManager.Instance.outputPath + gameObject.name + ".ini", data);
         AssetDatabase.Refresh();
