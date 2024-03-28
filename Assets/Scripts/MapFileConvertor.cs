@@ -34,7 +34,6 @@ public class MapFileConvertor : MonoBehaviour
         }
     }
 
-    [ContextMenu("파일 생성")]
     public void GenerateFile()
     {
         string data = "[map]\nname=" + gameObject.name + "\nsize=" + mapSize.x + "," + mapSize.y + "\nportal=";
