@@ -10,12 +10,15 @@ public class GenerateMapData : MonoBehaviour
     static void Generate()
     {
         RemoveAll(TileManager.Instance.outputPath);
-        var maps = GameObject.Find("Map Grid").transform;
+        var maps = TileManager.Instance.transform;
         foreach (Transform map in maps)
         {
             map.GetComponent<MapFileConvertor>().GenerateFile();
         }
-        CopyTo(TileManager.Instance.outputPath, "../GameServer/MMOServer/common/generated/maps");
+        foreach (string outputPath in TileManager.Instance.outputPathList)
+        {
+            CopyTo(TileManager.Instance.outputPath, outputPath);
+        }
     }
 
     static void RemoveAll(string path)
