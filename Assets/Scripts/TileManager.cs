@@ -17,7 +17,6 @@ public class TileManager : MonoBehaviour
     }
 
     public string outputPath;
-    public List<string> outputPathList;
     public List<MapFileConvertor> ignore;
 
     [ContextMenu("ÀÏ°ý º¯È¯")]

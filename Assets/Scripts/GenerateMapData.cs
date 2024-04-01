@@ -10,14 +10,18 @@ public class GenerateMapData : MonoBehaviour
     static void Generate()
     {
         RemoveAll(TileManager.Instance.outputPath);
-        var maps = TileManager.Instance.transform;
-        foreach (Transform map in maps)
+        var editorSetting = Resources.Load<EditorSetting>("Setting\\Editor Setting");
+        if(editorSetting == null)
         {
-            map.GetComponent<MapFileConvertor>().GenerateFile();
+            Debug.LogError("Editor Setting 파일이 Assets\\Resources\\Setting 위치에 존재해야 합니다.");
+            return;
         }
-        foreach (string outputPath in TileManager.Instance.outputPathList)
+        var outputPathList = editorSetting.outputPathList;
+        TileManager.Instance.ConvertAllMap();
+        foreach (string outputPath in outputPathList)
         {
             CopyTo(TileManager.Instance.outputPath, outputPath);
+            Debug.Log(outputPath + " 로 결과 복사 완료");
         }
     }
 
