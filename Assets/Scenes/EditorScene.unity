@@ -262,6 +262,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
+      propertyPath: spawnMonsterName
+      value: Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: portalLinks.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -7486,6 +7490,10 @@ PrefabInstance:
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: mapSize.y
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
+      propertyPath: spawnMonsterName
+      value: AttackDrone
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: portalLinks.Array.size
@@ -15493,6 +15501,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
+      propertyPath: spawnMonsterName
+      value: AttackDrone
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: portalLinks.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -19014,6 +19026,10 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
+      propertyPath: spawnMonsterName
+      value: TurretPlant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: portalLinks.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -21113,6 +21129,10 @@ PrefabInstance:
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: mapSize.y
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
+      propertyPath: spawnMonsterName
+      value: TurretPlant
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: portalLinks.Array.size
@@ -26124,6 +26144,10 @@ PrefabInstance:
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
+      propertyPath: spawnMonsterName
+      value: Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: portalLinks.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -29951,6 +29975,10 @@ PrefabInstance:
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: mapSize.y
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
+      propertyPath: spawnMonsterName
+      value: Slime
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: portalLinks.Array.size
@@ -36396,6 +36424,10 @@ PrefabInstance:
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: mapSize.y
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
+      propertyPath: spawnMonsterName
+      value: Robot
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: portalLinks.Array.size
@@ -44483,6 +44515,10 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
+      propertyPath: spawnMonsterName
+      value: Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: portalLinks.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -49681,7 +49717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554530, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: mapSize.x
@@ -49690,6 +49726,10 @@ PrefabInstance:
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: mapSize.y
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
+      propertyPath: spawnMonsterName
+      value: AttackDrone
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: portalLinks.Array.size
@@ -54598,7 +54638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554530, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: mapSize.x
