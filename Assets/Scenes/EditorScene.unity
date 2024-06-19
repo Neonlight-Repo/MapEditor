@@ -26145,7 +26145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: spawnMonsterName
-      value: Robot
+      value: GeminiRobot
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: portalLinks.Array.size
@@ -36427,7 +36427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: spawnMonsterName
-      value: Robot
+      value: GeminiRobot
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: portalLinks.Array.size
@@ -44516,7 +44516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: spawnMonsterName
-      value: Robot
+      value: GeminiRobot
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: portalLinks.Array.size
