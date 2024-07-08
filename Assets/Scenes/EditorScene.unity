@@ -247,7 +247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554530, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: m_Name
-      value: Easy_Right
+      value: Easy_Right1
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554530, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: m_IsActive
@@ -19011,11 +19011,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554530, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: m_Name
-      value: Easy_Left
+      value: Easy_Left1
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554530, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: mapSize.x
@@ -26129,7 +26129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554530, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: m_Name
-      value: Hard_Left2
+      value: Hard_Left2-2
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554530, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: m_IsActive
@@ -36411,7 +36411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554530, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: m_Name
-      value: Hard_Left1
+      value: Hard_Left2-1
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554530, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: m_IsActive
@@ -44500,7 +44500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554530, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: m_Name
-      value: Hard_Left
+      value: Hard_Left1
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554530, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: m_IsActive
@@ -49713,11 +49713,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554530, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: m_Name
-      value: Hard_Right
+      value: Hard_Right1
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554530, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7121964562660554542, guid: 3eb104c0e1b492d4286d345f3869ad92, type: 3}
       propertyPath: mapSize.x
